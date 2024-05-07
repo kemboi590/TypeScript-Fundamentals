@@ -1,7 +1,7 @@
 //Every value has a type
 
 /*
-Cab be categorized into 2
+Can be categorized into 2
  - primitive types -> string , number , boolean, null, undefined, symbol
  - object types -> functions, arrays, classes and more
 

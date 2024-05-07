@@ -7,7 +7,7 @@ To do so, you use the any type. The any type allows you to assign a value of any
  */
 
 //json from therd party API
-const json = `{"latitude": 10.11, "longitude": 12.12}`;
+const json:any = `{"latitude": 10.11, "longitude": 12.12}`;
 
 //perse JSON to find location
 const currentLocation = JSON.parse(json);

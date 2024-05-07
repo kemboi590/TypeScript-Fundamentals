@@ -5,6 +5,10 @@ To define an enum, you follow these steps:
 
 First, use the enum keyword followed by the name of the enum.
 Then, define constant values for the enum.
+
+Allow devs define set of named constants|
+Numeric enums
+string based enums
  */
 
 enum Month {
@@ -67,4 +71,11 @@ const request = {
 if (request.status === ApprovalStatus.approved) {
   // send email
   console.log("Send email to the Applicant ...");
+}
+
+enum Direction {
+  Up = 1,
+  Down,
+  Left,
+  Right,
 }
