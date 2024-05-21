@@ -13,7 +13,12 @@ skills.unshift("Database design");
 
 //Array properties
 let series = [1, 2, 3, 4, 5];
-// console.log(series);
+series.forEach((series) => {
+  console.log(series);
+});
+
+series.push(6);
+console.log(series);
 
 //map()
 let doubleSeries = series.map((e) => e * 2);
@@ -27,3 +32,15 @@ let doubleSeries = series.map((e) => e * 2);
 //same as:
 let values: (string | number)[] = ["programming", 5, "Azure", "4"];
 console.log(values);
+
+// ReadOnly Arrays
+let numVal = [1, 2, 3, 4, 5];
+function doStuff(numVal: ReadonlyArray<number>) {
+  //   numVal.push(6); // Error
+  //   numVal.pop(); // Error
+  //   numVal.shift(); // Error
+  //   numVal.unshift(0); // Error
+  console.log(numVal);
+}
+
+doStuff(numVal);

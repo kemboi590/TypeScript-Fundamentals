@@ -1,13 +1,18 @@
-// class User {
-//   public email: string = "jesg"
-//   private name: string;
-//   private readonly city: string = "Kutus";
-//   constructor(email: string, name: string) {
-//     this.email = email;
-//     this.name = name;
-//     kemboi.city
-//   }
-// }
+class User1 {
+  public email: string;
+  private name: string;
+  private readonly city: string = "Kutus";
+
+  constructor(email: string, name: string) { 
+    this.email = email;
+    this.name = name;
+  }
+}
+
+// log the user1 class
+const josh = new User1("bkemboi@gmail.com", "Brian Kemboi");
+console.log(`Josh email is ${josh.email}`);
+
 
 class User {
   // properties can be private or public
@@ -32,11 +37,6 @@ class User {
   }
 
   set courseCount(courseNumber: number) {
-    if (courseNumber <= 1) {
-      throw new Error("Course count should be more than 1");
-    }
-    this._courseCount = courseNumber;
-
     if (courseNumber <= 1) {
       throw new Error("Course count should be more than 1");
     }
